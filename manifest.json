@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "tweets-only",
+  "version": "1.0",
+
+  "description": "remove promoted tweets",
+
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/"],
+      "js": ["tweets-only.js"]
+    }
+  ]
+
+}
